@@ -1,4 +1,10 @@
 GM::Application.routes.draw do
+  get "estaticas/home"
+
+  get "estaticas/sobre"
+
+  get "estaticas/ajuda"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
