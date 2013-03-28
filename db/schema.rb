@@ -13,12 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130328174634) do
 
-  create_table "cervejaria", :force => true do |t|
-    t.string   "nome"
-    t.string   "endereco"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
   create_table "cervejas", :force => true do |t|
     t.string   "nome"
