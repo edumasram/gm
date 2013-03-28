@@ -1,4 +1,10 @@
 GM::Application.routes.draw do
+  resources :cervejas
+
+
+  resources :cervejaria
+
+
   match '/home', to: 'estaticas#home'
 
   get "estaticas/sobre"

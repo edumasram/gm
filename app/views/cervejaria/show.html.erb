@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @cervejarium.nome %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @cervejarium.endereco %>
+</p>
+
+
+<%= link_to 'Edit', edit_cervejarium_path(@cervejarium) %> |
+<%= link_to 'Back', cervejaria_path %>
