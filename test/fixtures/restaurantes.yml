@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Nome: MyString
+  Endereco: MyString
+
+two:
+  Nome: MyString
+  Endereco: MyString

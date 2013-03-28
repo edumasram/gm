@@ -1,4 +1,7 @@
 GM::Application.routes.draw do
+  resources :restaurantes
+
+
   resources :cervejas
 
 
