@@ -1,5 +1,5 @@
 GM::Application.routes.draw do
-  get "estaticas/home"
+  match '/home', to: 'estaticas#home'
 
   get "estaticas/sobre"
 
