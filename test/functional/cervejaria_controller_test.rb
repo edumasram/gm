@@ -18,7 +18,7 @@ class CervejariaControllerTest < ActionController::TestCase
 
   test "should create cervejarium" do
     assert_difference('Cervejarium.count') do
-      post :create, cervejarium: { endereco: @cervejarium.endereco, nome: @cervejarium.nome }
+      post :create, cervejarium: { Endereco: @cervejarium.Endereco, Nome: @cervejarium.Nome }
     end
 
     assert_redirected_to cervejarium_path(assigns(:cervejarium))
@@ -35,7 +35,7 @@ class CervejariaControllerTest < ActionController::TestCase
   end
 
   test "should update cervejarium" do
-    put :update, id: @cervejarium, cervejarium: { endereco: @cervejarium.endereco, nome: @cervejarium.nome }
+    put :update, id: @cervejarium, cervejarium: { Endereco: @cervejarium.Endereco, Nome: @cervejarium.Nome }
     assert_redirected_to cervejarium_path(assigns(:cervejarium))
   end
 

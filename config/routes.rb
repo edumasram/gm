@@ -1,5 +1,14 @@
 GM::Application.routes.draw do
-  resources :restaurantes
+  resources :users, :user_sessions
+  match 'login' => 'user_sessions#new', :as => :login
+  match 'logout' => 'user_sessions#destroy', :as => :logout
+
+
+  resources :cervejaria
+
+
+  resources :restaurantes do
+    resources :avaliacaos end
 
 
   resources :cervejas

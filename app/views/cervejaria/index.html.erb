@@ -11,8 +11,8 @@
 
 <% @cervejaria.each do |cervejarium| %>
   <tr>
-    <td><%= cervejarium.nome %></td>
-    <td><%= cervejarium.endereco %></td>
+    <td><%= cervejarium.Nome %></td>
+    <td><%= cervejarium.Endereco %></td>
     <td><%= link_to 'Show', cervejarium %></td>
     <td><%= link_to 'Edit', edit_cervejarium_path(cervejarium) %></td>
     <td><%= link_to 'Destroy', cervejarium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
